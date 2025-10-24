@@ -31,7 +31,7 @@ jobs:
         make recoveryimage -j$(nproc)
 
     - name: Сохранение результата
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: recovery-img
         path: twrp/out/target/product/X6855/recovery.img
